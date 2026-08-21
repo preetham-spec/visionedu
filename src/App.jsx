@@ -11,6 +11,7 @@ import Blog from './pages/Blog'
 import BlogPost from './pages/BlogPost'
 import Apply from './pages/Apply'
 import Facilities from './pages/Facilities'
+import PrivacyPolicy from './pages/PrivacyPolicy'
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/apply" element={<Apply />} />
         <Route path="/facilities" element={<Facilities />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
       <Footer />
     </div>

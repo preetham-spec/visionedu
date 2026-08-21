@@ -67,7 +67,10 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-6 pt-4 flex flex-col md:flex-row justify-between items-center text-[10px] text-gray-500">
-          <p>&copy; 2026 Vision Education Group. All rights reserved.</p>
+          <p>
+            &copy; 2026 Vision Education Group. All rights reserved. ·{' '}
+            <Link to="/privacy-policy" className="hover:text-brand-400">Privacy Policy</Link>
+          </p>
           <div className="flex space-x-3 mt-2 md:mt-0">
             <a href="#" className="hover:text-brand-400"><i className="fab fa-instagram text-sm"></i></a>
             <a href="#" className="hover:text-brand-400"><i className="fab fa-youtube text-sm"></i></a>
