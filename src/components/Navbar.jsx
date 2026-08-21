@@ -23,9 +23,9 @@ export default function Navbar() {
   const routeLinks = [
     { to: '/campuses', label: 'Campuses' },
     { to: '/facilities', label: 'Facilities' },
-    { to: '/neet-academy', label: 'NEET Academy' },
     { to: '/faq', label: 'FAQ' },
     { to: '/contact', label: 'Contact' },
+    { to: '/neet-academy', label: 'NEET Academy' },
   ]
 
   return (
