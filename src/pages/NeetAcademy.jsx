@@ -59,6 +59,13 @@ const programFeatures = [
   },
 ]
 
+const campusContacts = {
+  boys: ['6363802163', '7411268907', '6363802166', '7349744107'],
+  girls: ['7349744105', '9886218399', '7411268903', '7349744119'],
+}
+
+const formatPhone = (n) => `${n.slice(0, 5)} ${n.slice(5)}`
+
 const scholarshipTiers = [
   { range: '300 – 349', pct: '15%' },
   { range: '350 – 399', pct: '25%' },
@@ -123,12 +130,6 @@ export default function NeetAcademy() {
                   className="glass hover:bg-white/10 text-white px-6 py-3 rounded-xl font-medium text-sm transition-all flex items-center gap-2"
                 >
                   <i className="fas fa-phone text-xs"></i> 080 471 85111
-                </a>
-                <a
-                  href="tel:+917349744105"
-                  className="glass hover:bg-white/10 text-white px-6 py-3 rounded-xl font-medium text-sm transition-all flex items-center gap-2"
-                >
-                  <i className="fas fa-phone text-xs"></i> 73497 44105
                 </a>
               </div>
             </div>
@@ -215,16 +216,38 @@ export default function NeetAcademy() {
             <div className="bg-brand-900 text-white rounded-xl p-5 relative overflow-hidden">
               <span className="inline-block text-[10px] px-2 py-0.5 rounded-full font-bold bg-white/15 mb-2">Exclusive</span>
               <h4 className="font-bold text-sm sm:text-base mb-1">Boys Residential Campus</h4>
-              <p className="text-xs sm:text-sm text-brand-100">
+              <p className="text-xs sm:text-sm text-brand-100 mb-4">
                 A dedicated residential campus for boys, with classrooms, hostel and 24x7 security on the same premises.
               </p>
+              <div className="grid grid-cols-2 gap-x-3 gap-y-1.5 pt-3 border-t border-white/10">
+                {campusContacts.boys.map((n) => (
+                  <a
+                    key={n}
+                    href={`tel:+91${n}`}
+                    className="flex items-center gap-1.5 text-xs text-brand-100 hover:text-accent-400 transition-colors"
+                  >
+                    <i className="fas fa-phone text-[10px] text-accent-400"></i> {formatPhone(n)}
+                  </a>
+                ))}
+              </div>
             </div>
             <div className="bg-brand-900 text-white rounded-xl p-5 relative overflow-hidden">
               <span className="inline-block text-[10px] px-2 py-0.5 rounded-full font-bold bg-white/15 mb-2">Exclusive</span>
               <h4 className="font-bold text-sm sm:text-base mb-1">Girls Residential Campus</h4>
-              <p className="text-xs sm:text-sm text-brand-100">
+              <p className="text-xs sm:text-sm text-brand-100 mb-4">
                 A separate, dedicated residential campus for girls, with dedicated wardens and round-the-clock supervision.
               </p>
+              <div className="grid grid-cols-2 gap-x-3 gap-y-1.5 pt-3 border-t border-white/10">
+                {campusContacts.girls.map((n) => (
+                  <a
+                    key={n}
+                    href={`tel:+91${n}`}
+                    className="flex items-center gap-1.5 text-xs text-brand-100 hover:text-accent-400 transition-colors"
+                  >
+                    <i className="fas fa-phone text-[10px] text-accent-400"></i> {formatPhone(n)}
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
 
