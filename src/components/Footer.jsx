@@ -70,7 +70,8 @@ export default function Footer() {
           <p>
             &copy; 2026 Vision Education Group. All rights reserved. ·{' '}
             <Link to="/privacy-policy" className="hover:text-brand-400">Privacy Policy</Link> ·{' '}
-            <Link to="/terms-and-conditions" className="hover:text-brand-400">Terms and Conditions</Link>
+            <Link to="/terms-and-conditions" className="hover:text-brand-400">Terms and Conditions</Link> ·{' '}
+            <Link to="/anti-ragging-policy" className="hover:text-brand-400">Anti-Ragging Policy</Link>
           </p>
           <div className="flex space-x-3 mt-2 md:mt-0">
             <a href="#" className="hover:text-brand-400"><i className="fab fa-instagram text-sm"></i></a>

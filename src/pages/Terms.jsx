@@ -42,140 +42,51 @@ export default function Terms() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="article-content">
             <p>
-              Welcome to <strong>Vision PU College &amp; NEET Academy</strong> ("we," "our," or "us"). By accessing
-              or using our website (
-              <a href="https://visionedu.vercel.app" target="_blank" rel="noopener noreferrer">
-                https://visionedu.vercel.app
-              </a>
-              ), submitting admission enquiry forms, or enrolling in our academic programs, you ("User," "Student,"
-              or "Parent/Guardian") agree to be bound by these Terms and Conditions.
+              By accessing or using the <strong>Vision PU College &amp; NEET Academy</strong> website or submitting
+              enquiry forms, you agree to comply with the following Terms and Conditions.
             </p>
-            <p>If you do not agree with any part of these Terms, you must not use our website or services.</p>
 
-            <h2>1. Website Use &amp; Information Accuracy</h2>
-            <ul>
-              <li>
-                <strong>Informational Purpose:</strong> The content provided on this website—including course
-                structures, faculty details, campus facilities, fee structures, and scholarship details—is for
-                general informational purposes only. We reserve the right to modify or update academic programs,
-                schedules, and policies without prior notice.
-              </li>
-              <li>
-                <strong>Accuracy:</strong> While we strive to ensure all information is accurate and up to date,
-                Vision PU College makes no warranties regarding the completeness or reliability of website content.
-                Decisions made based on website content should be verified directly with our admission office.
-              </li>
-            </ul>
+            <h2>1. Accuracy of Academic Information</h2>
+            <p>
+              All course details, faculty profiles, fee structures, and event schedules published on the website
+              are provided for general informational purposes. Management reserves the right to modify academic
+              structures without prior notice.
+            </p>
 
             <h2>2. Admissions &amp; Enrollment</h2>
             <ul>
               <li>
-                <strong>Eligibility:</strong> Admission to Pre-University (PU) courses, NEET integrated programs, or
-                repeater batches is subject to meeting the academic criteria set by the Pre-University Education
-                Board, Karnataka, and the internal criteria of Vision PU College.
+                Submitting an online enquiry does not guarantee admission. Admissions are finalized after
+                physical/virtual counselling, document verification, and fee submission.
               </li>
               <li>
-                <strong>Application Submission:</strong> Filling out an online enquiry or registration form does not
-                guarantee admission. Admissions are confirmed only after document verification, campus counseling,
-                and receipt of required fees.
-              </li>
-              <li>
-                <strong>Right of Refusal:</strong> Vision PU College reserves the right to reject any application or
-                cancel admission at any stage if the information provided is found to be false, forged, or
-                misleading.
+                Management reserves the right to reject an application if provided credentials are found to be
+                false or altered.
               </li>
             </ul>
 
-            <h2>3. Fee Payment &amp; Refund Policy</h2>
-            <ul>
-              <li>
-                <strong>Fee Commitment:</strong> By enrolling your ward, parents/guardians agree to adhere to the
-                payment schedule outlined during admission counseling.
-              </li>
-              <li>
-                <strong>Refund Policy:</strong> Registration fees, admission fees, and study material fees are
-                generally <strong>non-refundable</strong>. Tuition or hostel fee refunds (if applicable) are
-                governed strictly by the college's internal refund policy and the guidelines of the PU Board.
-                Refund requests must be submitted in writing to the administration office.
-              </li>
-              <li>
-                <strong>Delayed Payments:</strong> Failure to clear fee dues within the stipulated timeline may
-                result in suspended access to classes, exams, or residential facilities.
-              </li>
-            </ul>
-
-            <h2>4. Code of Conduct &amp; Campus Discipline</h2>
-            <ul>
-              <li>
-                <strong>Student Behavior:</strong> Students are expected to maintain strict discipline on all
-                campuses (Main Campus, Doddagubbi Boys Residential, and Kalyan Nagar/Anagalapura Girls Residential).
-              </li>
-              <li>
-                <strong>Mobile Phone Policy:</strong> Use of mobile phones, electronic gadgets, or unapproved
-                devices is strictly prohibited inside classrooms, study hours, and residential dormitories unless
-                explicitly authorized for academic purposes.
-              </li>
-              <li>
-                <strong>Attendance:</strong> Mandatory attendance during regular classes, supervised evening study
-                hours, and mock exams is required. Chronic absenteeism may lead to disciplinary action.
-              </li>
-              <li>
-                <strong>Disciplinary Action:</strong> The management reserves the right to suspend or rusticate any
-                student found violating college rules, damaging campus property, or engaging in ragging, bullying,
-                or illegal activities.
-              </li>
-            </ul>
-
-            <h2>5. Intellectual Property Rights</h2>
-            <ul>
-              <li>
-                <strong>Study Material:</strong> All printed and digital study materials, mock test papers, DPPs
-                (Daily Practice Problems), and academic resources provided by Vision NEET Academy remain our
-                exclusive intellectual property. They are strictly for the enrolled student's personal use and
-                cannot be reproduced, sold, or distributed.
-              </li>
-              <li>
-                <strong>Website Content:</strong> All text, graphics, logos, and images on this website are the
-                property of Vision PU College &amp; NEET Academy and are protected by copyright laws.
-              </li>
-            </ul>
-
-            <h2>6. Limitation of Liability</h2>
-            <ul>
-              <li>
-                <strong>Academic Performance:</strong> While we provide expert faculty, rigorous study plans, and
-                continuous assessment, Vision PU College does not guarantee specific exam ranks, scores, or medical
-                seat allotments. Student success depends on individual effort and capability.
-              </li>
-              <li>
-                <strong>Technical Issues:</strong> We are not liable for any technical failures, data loss, or
-                server downtime regarding website access or online payment gateway failures.
-              </li>
-            </ul>
-
-            <h2>7. Changes to Terms</h2>
+            <h2>3. Fees &amp; Refund Guidelines</h2>
             <p>
-              We reserve the right to revise these Terms and Conditions at any time. Significant updates will be
-              posted on this page. Your continued use of the website or continuation of enrollment signifies
-              acceptance of the updated terms.
+              Registration and admission fees are non-refundable. Tuition and hostel fee refunds are subject
+              strictly to institutional rules and Department of Pre-University Education guidelines.
             </p>
 
-            <h2>8. Governing Law and Jurisdiction</h2>
+            <h2>4. Governing Law &amp; Jurisdiction</h2>
             <p>
-              These Terms and Conditions shall be governed by and construed in accordance with the laws of India.
-              Any disputes arising out of these terms, website usage, or admissions shall be subject to the
-              exclusive jurisdiction of the courts located in <strong>Bengaluru, Karnataka</strong>.
+              These terms are governed by the laws of India. Any legal disputes arising out of website usage or
+              admissions are subject exclusively to the courts of <strong>Bengaluru, Karnataka</strong>.
             </p>
 
-            <h2>9. Contact Information</h2>
-            <p>For any clarifications regarding these Terms and Conditions, please contact us:</p>
+            <h2>Contact Information</h2>
             <ul>
-              <li><strong>Institution:</strong> Vision PU College &amp; NEET Academy</li>
+              <li><strong>Phone:</strong> <a href="tel:+918047185111">080 471 85111</a></li>
+              <li><strong>Email:</strong> <a href="mailto:info@visionedu.in">info@visionedu.in</a></li>
               <li>
-                <strong>Administration Email:</strong> <a href="mailto:admin@visionedu.in">admin@visionedu.in</a> /{' '}
-                <a href="mailto:support@visionedu.in">support@visionedu.in</a>
+                <strong>Website:</strong>{' '}
+                <a href="https://www.visionedu.in" target="_blank" rel="noopener noreferrer">
+                  www.visionedu.in
+                </a>
               </li>
-              <li><strong>Primary Location:</strong> Kalyan Nagar / Doddagubbi, Bengaluru, Karnataka, India</li>
             </ul>
           </div>
         </div>

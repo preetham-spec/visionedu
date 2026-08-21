@@ -13,6 +13,7 @@ import Apply from './pages/Apply'
 import Facilities from './pages/Facilities'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import Terms from './pages/Terms'
+import AntiRagging from './pages/AntiRagging'
 
 export default function App() {
   return (
@@ -31,6 +32,7 @@ export default function App() {
         <Route path="/facilities" element={<Facilities />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-and-conditions" element={<Terms />} />
+        <Route path="/anti-ragging-policy" element={<AntiRagging />} />
       </Routes>
       <Footer />
     </div>

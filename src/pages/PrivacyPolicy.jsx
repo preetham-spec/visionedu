@@ -49,101 +49,47 @@ export default function PrivacyPolicy() {
             <p>
               This Privacy Policy explains how we collect, use, disclose, and safeguard your personal information
               when you visit our website (
-              <a href="https://visionedu.vercel.app" target="_blank" rel="noopener noreferrer">
-                https://visionedu.vercel.app
+              <a href="https://www.visionedu.in" target="_blank" rel="noopener noreferrer">
+                www.visionedu.in
               </a>
-              ) or interact with our online admission enquiry forms.
+              ) or interact with our online enquiry forms.
             </p>
 
             <h2>1. Information We Collect</h2>
-            <p>
-              We collect information that you voluntarily provide when filling out admission enquiry forms,
-              requesting callbacks, or contacting our counselling team:
-            </p>
+            <p>We collect information voluntarily provided when filling out enquiry forms or requesting callbacks:</p>
             <ul>
-              <li><strong>Personal Identification:</strong> Full Name, Date of Birth, Gender.</li>
-              <li><strong>Contact Information:</strong> Mobile/WhatsApp Number, Email Address, Residential Address.</li>
-              <li><strong>Academic Details:</strong> Current Grade/Class, Target Course (e.g., 1st PUC, NEET Repeaters, CET), School/College Name.</li>
-              <li><strong>Parent/Guardian Information:</strong> Parent/Guardian Name, Phone Number, Occupation.</li>
-              <li><strong>Technical Data:</strong> IP address, browser type, device type, and interaction data collected automatically via essential cookies or analytics to optimize site performance.</li>
+              <li><strong>Personal Details:</strong> Student Name, Date of Birth, Gender.</li>
+              <li><strong>Contact Information:</strong> Phone Number, Email Address.</li>
+              <li><strong>Academic Information:</strong> Current Class, Target Stream (1st PUC, 2nd PUC, NEET Repeaters, CET).</li>
+              <li><strong>Parent/Guardian Info:</strong> Parent Name, Contact Details, Address.</li>
             </ul>
 
             <h2>2. How We Use Your Information</h2>
-            <p>We use the collected information strictly for legitimate academic and administrative purposes, including:</p>
+            <p>We process your data strictly for legitimate educational and administrative purposes:</p>
             <ul>
-              <li><strong>Admission Counselling:</strong> Contacting you via Phone, SMS, Email, or WhatsApp to address admission enquiries and provide course details.</li>
-              <li><strong>Application Processing:</strong> Processing requests for campus visits, counseling sessions, or entrance exam registrations.</li>
-              <li><strong>Communication &amp; Updates:</strong> Sending important updates regarding scholarship tests, result announcements, fee structures, and academic events.</li>
-              <li><strong>Service Improvement:</strong> Improving our website navigation, user experience, and digital communication strategies.</li>
+              <li>Contacting you regarding admissions, counselling sessions, and course details.</li>
+              <li>Sending updates on scholarship tests, fee structures, and academic events.</li>
+              <li>Improving our website experience and student support services.</li>
             </ul>
 
-            <h2>3. Legal Basis for Processing (DPDP Act Compliance)</h2>
-            <p>In accordance with India's Digital Personal Data Protection (DPDP) Act 2023:</p>
-            <ul>
-              <li>We process your personal data based on your <strong>explicit consent</strong> given when you submit an enquiry form.</li>
-              <li>For applicants who are minors (under 18 years of age), consent is deemed to be provided or authorized by the parent or legal guardian filling out the form.</li>
-              <li>You reserve the right to withdraw your consent at any time by contacting our Grievance Officer.</li>
-            </ul>
-
-            <h2>4. Sharing &amp; Disclosure of Data</h2>
-            <p><strong>We do NOT sell, rent, or trade your personal information to third parties.</strong></p>
-            <p>We may share data only under the following limited circumstances:</p>
-            <ul>
-              <li><strong>Service Providers:</strong> Trusted third-party technology providers (e.g., email notification services, SMS gateways, CRM software) operating under strict confidentiality agreements solely to process communications on our behalf.</li>
-              <li><strong>Legal Obligations:</strong> When required by law, court order, or governmental authorities to comply with statutory requirements.</li>
-            </ul>
-
-            <h2>5. Data Security &amp; Storage</h2>
+            <h2>3. Legal Basis (DPDP Act Compliance)</h2>
             <p>
-              We implement appropriate technical, administrative, and organizational security measures to protect
-              your personal data against unauthorized access, alteration, disclosure, or destruction. Access to
-              student lead data is restricted exclusively to authorized admission staff and administrative
-              counselors.
+              In accordance with India's Digital Personal Data Protection (DPDP) Act 2023, data is processed based
+              on explicit consent provided upon submitting an enquiry form. For minors (under 18 years), consent is
+              provided or authorized by the parent or legal guardian.
             </p>
 
-            <h2>6. Data Retention</h2>
+            <h2>4. Data Protection Rights &amp; Grievances</h2>
             <p>
-              We retain personal information only for as long as necessary to fulfill the purposes for which it was
-              collected, including satisfying any administrative, legal, or accounting obligations.
+              You reserve the right to request access, correction, or removal of your personal contact information
+              from our active outreach databases.
             </p>
-
-            <h2>7. Your Data Protection Rights</h2>
-            <p>Under applicable Indian data protection laws, you have the following rights regarding your personal data:</p>
-            <ul>
-              <li><strong>Right to Access:</strong> Request a summary of personal data held about you.</li>
-              <li><strong>Right to Correction:</strong> Request correction or updating of inaccurate/incomplete details.</li>
-              <li><strong>Right to Erasure / Withdrawal:</strong> Request the removal of your personal contact details from our active outreach/marketing database.</li>
-            </ul>
-            <p>
-              To exercise any of these rights, please email us at{' '}
-              <a href="mailto:admissions@visionedu.in">admissions@visionedu.in</a>.
-            </p>
-
-            <h2>8. Third-Party Links</h2>
-            <p>
-              Our website may contain links to external sites (such as Google Maps, social media profiles, or
-              payment gateways). We are not responsible for the privacy practices or content of third-party
-              websites. We encourage you to review the privacy policies of any third-party site you visit.
-            </p>
-
-            <h2>9. Updates to This Policy</h2>
-            <p>
-              We may update this Privacy Policy periodically to reflect operational, legal, or regulatory changes.
-              Updated versions will be posted directly on this page with a revised "Last Updated" date.
-            </p>
-
-            <h2>10. Contact &amp; Grievance Redressal</h2>
-            <p>
-              If you have any questions, concerns, or grievances regarding this Privacy Policy or data processing
-              practices, please contact our Data Grievance Officer:
-            </p>
+            <p><strong>Grievance Contact:</strong></p>
             <ul>
               <li><strong>Institution:</strong> Vision PU College &amp; NEET Academy</li>
-              <li>
-                <strong>Email:</strong> <a href="mailto:admissions@visionedu.in">admissions@visionedu.in</a> /{' '}
-                <a href="mailto:support@visionedu.in">support@visionedu.in</a>
-              </li>
-              <li><strong>Location:</strong> Kalyan Nagar / Doddagubbi, Bengaluru, Karnataka, India</li>
+              <li><strong>Phone:</strong> <a href="tel:+918047185111">080 471 85111</a></li>
+              <li><strong>Email:</strong> <a href="mailto:info@visionedu.in">info@visionedu.in</a></li>
+              <li><strong>Address:</strong> Kalyan Nagar / Doddagubbi, Bengaluru, Karnataka, India</li>
             </ul>
           </div>
         </div>
