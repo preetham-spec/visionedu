@@ -145,8 +145,6 @@ export default function NeetAcademy() {
         </div>
       </section>
 
-      <VisionPillars />
-
       {/* What is NEET */}
       <section className="py-14 md:py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -172,6 +170,8 @@ export default function NeetAcademy() {
           </div>
         </div>
       </section>
+
+      <VisionPillars />
 
       {/* Course Durations */}
       <section className="py-14 md:py-20 bg-gray-50">
