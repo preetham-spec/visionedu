@@ -62,6 +62,30 @@ export default function Footer() {
                 <i className="fas fa-phone text-brand-500"></i>
                 <span>080 471 85111{isNeetPage && ' | 73497 44105'}</span>
               </li>
+              {isNeetPage && (
+                <>
+                  <li className="pt-1">
+                    <p className="text-[10px] uppercase tracking-wide text-gray-500 mb-1">Boys Residential</p>
+                    <div className="flex flex-wrap gap-x-2.5 gap-y-1">
+                      {['63638 02163', '74112 68907', '63638 02166', '73497 44107'].map((n) => (
+                        <a key={n} href={`tel:+91${n.replace(' ', '')}`} className="hover:text-brand-400">
+                          {n}
+                        </a>
+                      ))}
+                    </div>
+                  </li>
+                  <li>
+                    <p className="text-[10px] uppercase tracking-wide text-gray-500 mb-1">Girls Residential</p>
+                    <div className="flex flex-wrap gap-x-2.5 gap-y-1">
+                      {['73497 44105', '98862 18399', '74112 68903', '73497 44119'].map((n) => (
+                        <a key={n} href={`tel:+91${n.replace(' ', '')}`} className="hover:text-brand-400">
+                          {n}
+                        </a>
+                      ))}
+                    </div>
+                  </li>
+                </>
+              )}
             </ul>
           </div>
         </div>
