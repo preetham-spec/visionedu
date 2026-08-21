@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import Seo from '../components/Seo'
 import Testimonials from '../components/Testimonials'
+import VisionPillars from '../components/VisionPillars'
 import EnquiryForm from '../components/EnquiryForm'
 import { neetTestimonials } from '../data/testimonials'
 
@@ -143,6 +144,8 @@ export default function NeetAcademy() {
           </div>
         </div>
       </section>
+
+      <VisionPillars />
 
       {/* What is NEET */}
       <section className="py-14 md:py-20 bg-white">
