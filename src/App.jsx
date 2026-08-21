@@ -12,6 +12,7 @@ import BlogPost from './pages/BlogPost'
 import Apply from './pages/Apply'
 import Facilities from './pages/Facilities'
 import PrivacyPolicy from './pages/PrivacyPolicy'
+import Terms from './pages/Terms'
 
 export default function App() {
   return (
@@ -29,6 +30,7 @@ export default function App() {
         <Route path="/apply" element={<Apply />} />
         <Route path="/facilities" element={<Facilities />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-and-conditions" element={<Terms />} />
       </Routes>
       <Footer />
     </div>

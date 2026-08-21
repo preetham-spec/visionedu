@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 const courseOptions = [
   { value: 'science', label: 'Science (PCMB / PCMC / PCME)' },
   { value: 'commerce', label: 'Commerce' },
@@ -79,6 +81,22 @@ export default function EnquiryForm({
       )}
 
       {showEmail && <input type="email" className={inputClass} placeholder="Email" />}
+
+      <label className="flex items-start gap-2 text-[11px] leading-snug text-gray-500">
+        <input
+          type="checkbox"
+          required
+          className="mt-0.5 h-3.5 w-3.5 shrink-0 rounded border-gray-300 text-brand-700 focus:ring-brand-700"
+        />
+        <span>
+          By submitting this form, you consent to {isNeet ? 'Vision NEET Academy' : 'Vision PU College'} contacting
+          you via Phone/WhatsApp/Email regarding your enquiry. Read our{' '}
+          <Link to="/privacy-policy" target="_blank" className="text-brand-700 font-semibold hover:underline">
+            Privacy Policy
+          </Link>
+          .
+        </span>
+      </label>
 
       <button
         type="submit"

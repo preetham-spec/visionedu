@@ -196,6 +196,22 @@ export default function Apply() {
               </>
             )}
 
+            <label className="flex items-start gap-2 text-xs leading-snug text-gray-600 pt-2 border-t border-gray-100">
+              <input
+                type="checkbox"
+                required
+                className="mt-0.5 h-4 w-4 shrink-0 rounded border-gray-300 text-brand-700 focus:ring-brand-700"
+              />
+              <span>
+                By submitting this form, you consent to Vision PU College contacting you via Phone/WhatsApp/Email
+                regarding your enquiry. Read our{' '}
+                <Link to="/privacy-policy" target="_blank" className="text-brand-700 font-semibold hover:underline">
+                  Privacy Policy
+                </Link>
+                .
+              </span>
+            </label>
+
             <button
               type="submit"
               disabled={submitting}
