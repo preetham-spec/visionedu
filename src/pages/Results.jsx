@@ -13,6 +13,7 @@ import {
   resultsAddress,
 } from '../data/results'
 import { jeeExamLabel, jeeTopper, jeeScorers, jeeAdmissionsYear, jeeCampusContacts } from '../data/jeeResults'
+import ResultAvatar from '../components/ResultAvatar'
 
 function ordinalSuffix(n) {
   const v = n % 100
@@ -108,11 +109,7 @@ export default function Results() {
                     key={s.regNo}
                     className="relative bg-gradient-to-br from-brand-900 to-brand-950 text-white rounded-2xl p-6 text-center shadow-lg"
                   >
-                    <img
-                      src={s.photo}
-                      alt={s.name}
-                      className="w-20 h-20 rounded-full object-cover mx-auto mb-3 border-2 border-accent-400"
-                    />
+                    <ResultAvatar src={s.photo} alt={s.name} size="lg" ring="border-accent-400" />
                     <span className="inline-block bg-accent-500 text-brand-950 text-xs font-extrabold uppercase tracking-wide px-3 py-1 rounded-full mb-4">
                       State {s.rank}
                       <sup>{ordinalSuffix(s.rank)}</sup> Rank
@@ -138,11 +135,7 @@ export default function Results() {
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
                 {topScorers.map((s) => (
                   <div key={s.regNo} className="bg-white rounded-xl border border-gray-100 shadow-sm p-3 text-center">
-                    <img
-                      src={s.photo}
-                      alt={s.name}
-                      className="w-12 h-12 rounded-full object-cover mx-auto mb-2 border border-gray-200"
-                    />
+                    <ResultAvatar src={s.photo} alt={s.name} />
                     <div className="text-xl font-extrabold text-brand-700">{s.marks}</div>
                     <div className="text-xs font-bold text-gray-900 mt-1 leading-snug">{s.name}</div>
                     <div className="text-[10px] text-gray-400 mt-0.5">{s.regNo}</div>
@@ -211,11 +204,7 @@ export default function Results() {
               <h3 className="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-8">Top Scorer</h3>
 
               <div className="max-w-xs bg-gradient-to-br from-brand-900 to-brand-950 text-white rounded-2xl p-6 text-center shadow-lg">
-                <img
-                  src={jeeTopper.photo}
-                  alt={jeeTopper.name}
-                  className="w-24 h-24 rounded-full object-cover mx-auto mb-3 border-2 border-accent-400"
-                />
+                <ResultAvatar src={jeeTopper.photo} alt={jeeTopper.name} size="xl" ring="border-accent-400" />
                 <h4 className="font-bold text-lg mb-1">{jeeTopper.name}</h4>
                 <p className="text-xs text-brand-200 mb-4">App No: {jeeTopper.appNo}</p>
                 <div className="inline-block bg-white/10 rounded-lg px-4 py-2">
@@ -235,11 +224,7 @@ export default function Results() {
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
                 {jeeScorers.map((s) => (
                   <div key={s.appNo} className="bg-white rounded-xl border border-gray-100 shadow-sm p-3 text-center">
-                    <img
-                      src={s.photo}
-                      alt={s.name}
-                      className="w-12 h-12 rounded-full object-cover mx-auto mb-2 border border-gray-200"
-                    />
+                    <ResultAvatar src={s.photo} alt={s.name} />
                     <div className="text-xl font-extrabold text-brand-700">{s.percentile}</div>
                     <div className="text-xs font-bold text-gray-900 mt-1 leading-snug">{s.name}</div>
                     <div className="text-[10px] text-gray-400 mt-0.5">{s.appNo}</div>
