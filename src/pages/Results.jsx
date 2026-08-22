@@ -72,6 +72,7 @@ const tabs = [
   { id: 'commerce', label: 'Commerce' },
   { id: 'neet', label: 'NEET' },
   { id: 'jee', label: 'JEE Mains' },
+  { id: 'kcet', label: 'KCET' },
 ]
 
 const tabHeroLabels = {
@@ -79,6 +80,7 @@ const tabHeroLabels = {
   commerce: commerceExamLabel,
   neet: neetRankersLabel,
   jee: jeeExamLabel,
+  kcet: kcetLabel,
 }
 
 export default function Results() {
@@ -426,16 +428,6 @@ export default function Results() {
             </div>
           </section>
 
-          {/* KCET Section */}
-          <section className="py-14 md:py-16 bg-gray-50">
-            <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-              <h2 className="text-brand-700 font-bold tracking-wide uppercase text-xs mb-1">{kcetLabel}</h2>
-              <h3 className="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-8">K-CET Engineering State Ranks</h3>
-              <ScorerGrid items={kcetRanks} keyField="appNo" valueField="rank" />
-              <p className="text-xs text-gray-500 mt-4 text-center italic">...and many more.</p>
-            </div>
-          </section>
-
           {/* Admissions CTA with campus contacts */}
           <section className="py-12 md:py-16 bg-white">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -462,6 +454,33 @@ export default function Results() {
                     </div>
                   ))}
                 </div>
+                <Link
+                  to="/apply"
+                  className="inline-block bg-accent-500 hover:bg-accent-400 text-brand-950 px-6 py-3 rounded-xl font-bold text-sm transition-all shadow-md"
+                >
+                  Apply for Admission
+                </Link>
+              </div>
+            </div>
+          </section>
+        </>
+      )}
+
+      {tab === 'kcet' && (
+        <>
+          <section className="py-14 md:py-16 bg-white">
+            <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+              <h2 className="text-brand-700 font-bold tracking-wide uppercase text-xs mb-1">{kcetLabel}</h2>
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-8">K-CET Engineering State Ranks</h3>
+              <ScorerGrid items={kcetRanks} keyField="appNo" valueField="rank" />
+              <p className="text-xs text-gray-500 mt-4 text-center italic">...and many more.</p>
+            </div>
+          </section>
+
+          <section className="py-12 md:py-16 bg-white">
+            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="bg-gradient-to-r from-brand-900 to-brand-800 rounded-2xl p-6 sm:p-8 text-center text-white">
+                <h4 className="text-xl sm:text-2xl font-extrabold mb-4">Join Vision PU College</h4>
                 <Link
                   to="/apply"
                   className="inline-block bg-accent-500 hover:bg-accent-400 text-brand-950 px-6 py-3 rounded-xl font-bold text-sm transition-all shadow-md"
