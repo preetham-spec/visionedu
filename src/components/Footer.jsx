@@ -111,6 +111,15 @@ export default function Footer() {
           </p>
           <div className="flex items-center space-x-3 mt-2 md:mt-0">
             <a
+              href="https://www.facebook.com/share/1Bnw83C9aZ/?mibextid=wwXIfr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-7 h-7 rounded-lg flex items-center justify-center text-white bg-[#1877F2] hover:opacity-90 transition-opacity shadow-sm"
+              aria-label="Follow Vision on Facebook"
+            >
+              <i className="fab fa-facebook-f text-sm"></i>
+            </a>
+            <a
               href="https://www.instagram.com/visionacademy.bengaluru/"
               target="_blank"
               rel="noopener noreferrer"
