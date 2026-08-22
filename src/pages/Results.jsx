@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import Seo from '../components/Seo'
 import {
+  resultsPosterImage,
   examLabel,
   yearsOfExcellence,
   admissionsYear,
@@ -63,6 +64,19 @@ export default function Results() {
           </p>
         </div>
       </section>
+
+      {/* Official results poster */}
+      {resultsPosterImage && (
+        <section className="py-10 md:py-14 bg-white">
+          <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+            <img
+              src={resultsPosterImage}
+              alt={examLabel}
+              className="w-full rounded-2xl shadow-lg border border-gray-100"
+            />
+          </div>
+        </section>
+      )}
 
       {/* State Rankers */}
       <section className="py-14 md:py-16 bg-white">

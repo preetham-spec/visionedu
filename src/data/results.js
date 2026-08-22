@@ -3,6 +3,7 @@
 // topScorers, resultStats and contactNumbers below; Results.jsx renders
 // whatever is here without needing any other changes.
 
+export const resultsPosterImage = '/images/results-2026-poster.jpg'
 export const examLabel = 'II PUC - 2026 Science Toppers'
 export const yearsOfExcellence = 20
 export const admissionsYear = '2026-27'
