@@ -109,8 +109,16 @@ export default function Footer() {
             <Link to="/terms-and-conditions" className="hover:text-brand-400">Terms and Conditions</Link> ·{' '}
             <Link to="/anti-ragging-policy" className="hover:text-brand-400">Anti-Ragging Policy</Link>
           </p>
-          <div className="flex space-x-3 mt-2 md:mt-0">
-            <a href="#" className="hover:text-brand-400"><i className="fab fa-instagram text-sm"></i></a>
+          <div className="flex items-center space-x-3 mt-2 md:mt-0">
+            <a
+              href="https://www.instagram.com/visionacademy.bengaluru/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-7 h-7 rounded-lg flex items-center justify-center text-white bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 hover:opacity-90 transition-opacity shadow-sm"
+              aria-label="Follow Vision on Instagram"
+            >
+              <i className="fab fa-instagram text-sm"></i>
+            </a>
             <a href="#" className="hover:text-brand-400"><i className="fab fa-youtube text-sm"></i></a>
           </div>
         </div>
