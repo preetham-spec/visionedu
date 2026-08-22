@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
 import Seo from '../components/Seo'
 import {
-  resultsPosterImage,
   examLabel,
+  passOutYear,
   yearsOfExcellence,
   admissionsYear,
   stateRankers,
@@ -65,24 +65,11 @@ export default function Results() {
         </div>
       </section>
 
-      {/* Official results poster */}
-      {resultsPosterImage && (
-        <section className="py-10 md:py-14 bg-white">
-          <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-            <img
-              src={resultsPosterImage}
-              alt={examLabel}
-              className="w-full rounded-2xl shadow-lg border border-gray-100"
-            />
-          </div>
-        </section>
-      )}
-
       {/* State Rankers */}
       <section className="py-14 md:py-16 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-brand-700 font-bold tracking-wide uppercase text-xs mb-1">State Rank Holders</h2>
-          <h3 className="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-8">Our Top Achievers</h3>
+          <h2 className="text-brand-700 font-bold tracking-wide uppercase text-xs mb-1">PUC Toppers · Batch of {passOutYear}</h2>
+          <h3 className="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-8">State Rank Holders</h3>
 
           <div className="grid sm:grid-cols-3 gap-5">
             {stateRankers.map((s) => (
@@ -90,12 +77,18 @@ export default function Results() {
                 key={s.regNo}
                 className="relative bg-gradient-to-br from-brand-900 to-brand-950 text-white rounded-2xl p-6 text-center shadow-lg"
               >
+                <img
+                  src={s.photo}
+                  alt={s.name}
+                  className="w-20 h-20 rounded-full object-cover mx-auto mb-3 border-2 border-accent-400"
+                />
                 <span className="inline-block bg-accent-500 text-brand-950 text-xs font-extrabold uppercase tracking-wide px-3 py-1 rounded-full mb-4">
                   State {s.rank}
                   <sup>{ordinalSuffix(s.rank)}</sup> Rank
                 </span>
                 <h4 className="font-bold text-lg mb-1">{s.name}</h4>
-                <p className="text-xs text-brand-200 mb-4">{s.regNo}</p>
+                <p className="text-xs text-brand-200">{s.regNo}</p>
+                <p className="text-[11px] text-accent-400 font-semibold mb-4">Batch of {passOutYear}</p>
                 <div className="inline-block bg-white/10 rounded-lg px-4 py-2">
                   <span className="text-2xl font-extrabold text-accent-400">{s.marks}</span>
                   <span className="text-xs text-brand-200"> / 600</span>
@@ -110,14 +103,20 @@ export default function Results() {
       <section className="py-14 md:py-16 bg-gray-50">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-brand-700 font-bold tracking-wide uppercase text-xs mb-1">And Many More</h2>
-          <h3 className="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-8">Top Scorers</h3>
+          <h3 className="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-8">PUC Toppers — Top Scorers</h3>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
             {topScorers.map((s) => (
               <div key={s.regNo} className="bg-white rounded-xl border border-gray-100 shadow-sm p-3 text-center">
+                <img
+                  src={s.photo}
+                  alt={s.name}
+                  className="w-12 h-12 rounded-full object-cover mx-auto mb-2 border border-gray-200"
+                />
                 <div className="text-xl font-extrabold text-brand-700">{s.marks}</div>
                 <div className="text-xs font-bold text-gray-900 mt-1 leading-snug">{s.name}</div>
                 <div className="text-[10px] text-gray-400 mt-0.5">{s.regNo}</div>
+                <div className="text-[10px] text-brand-600 font-semibold mt-0.5">Batch of {passOutYear}</div>
               </div>
             ))}
           </div>
