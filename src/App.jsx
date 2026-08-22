@@ -14,6 +14,7 @@ import Facilities from './pages/Facilities'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import Terms from './pages/Terms'
 import AntiRagging from './pages/AntiRagging'
+import Careers from './pages/Careers'
 
 export default function App() {
   return (
@@ -33,6 +34,7 @@ export default function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-and-conditions" element={<Terms />} />
         <Route path="/anti-ragging-policy" element={<AntiRagging />} />
+        <Route path="/careers" element={<Careers />} />
       </Routes>
       <Footer />
     </div>

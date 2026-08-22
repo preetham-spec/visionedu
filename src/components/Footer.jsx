@@ -45,9 +45,15 @@ export default function Footer() {
             <h4 className="text-white font-bold text-sm mb-3">Blog</h4>
             <Link
               to="/blog"
-              className="inline-flex items-center gap-2 text-xs font-semibold border border-gray-700 rounded-lg px-3 py-2 hover:border-brand-500 hover:text-brand-400 transition-colors"
+              className="inline-flex items-center gap-2 text-xs font-semibold border border-gray-700 rounded-lg px-3 py-2 hover:border-brand-500 hover:text-brand-400 transition-colors mb-2"
             >
               Read Our Blog <i className="fas fa-arrow-right text-[10px]"></i>
+            </Link>
+            <Link
+              to="/careers"
+              className="inline-flex items-center gap-2 text-xs font-semibold border border-gray-700 rounded-lg px-3 py-2 hover:border-brand-500 hover:text-brand-400 transition-colors"
+            >
+              Careers <i className="fas fa-arrow-right text-[10px]"></i>
             </Link>
           </div>
 
