@@ -9,7 +9,7 @@ const openings = [
   },
   {
     title: 'Junior Lecturer',
-    image: '/images/lab.jpg',
+    image: '/images/careers-junior-lecturer.jpg',
     description: 'Entry-level teaching position emphasizing student guidance, intellectual development, and collaboration with senior faculty.',
   },
   {
