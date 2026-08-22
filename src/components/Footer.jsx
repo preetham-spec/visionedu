@@ -13,12 +13,14 @@ export default function Footer() {
             <div className="flex items-center gap-2 mb-3">
               <div className="w-6 h-6 bg-brand-700 rounded flex items-center justify-center text-white font-bold text-sm">V</div>
               <span className="font-bold text-base text-white">
-                {isNeetPage ? 'Vision NEET Academy' : 'Vision PU College'}
+                {isNeetPage ? 'Vision NEET Academy' : isDegreePage ? 'Vision Degree College' : 'Vision PU College'}
               </span>
             </div>
             <p className="text-xs text-gray-400">
               {isNeetPage
                 ? 'Long-term and short-term NEET coaching in Bangalore, with mobile-free residential campuses and merit scholarships up to 100%.'
+                : isDegreePage
+                ? 'Undergraduate degree programs in Bangalore — B.Com, BBA and BCA — affiliated to Bangalore North University.'
                 : "Karnataka's trusted Pre-University institute for Science, Commerce and Degree education."}
             </p>
           </div>
@@ -38,6 +40,7 @@ export default function Footer() {
                 <li><a href="/campuses#main-campus" className="hover:text-brand-400">Banaswadi Day Scholar Campus</a></li>
                 <li><a href="/campuses#girls-campus" className="hover:text-brand-400">Girls Residential (Anagalapura)</a></li>
                 <li><a href="/campuses#boys-campus" className="hover:text-brand-400">Boys Residential (Bande Bommasandra)</a></li>
+                <li><Link to="/degree-college" className="hover:text-brand-400">Degree College</Link></li>
               </ul>
             </div>
           )}
@@ -47,7 +50,6 @@ export default function Footer() {
             <ul className="space-y-1.5 text-xs">
               <li><Link to="/blog" className="hover:text-brand-400">Read Our Blog</Link></li>
               <li><Link to="/careers" className="hover:text-brand-400">Careers</Link></li>
-              <li><Link to="/degree-college" className="hover:text-brand-400">Degree College</Link></li>
             </ul>
           </div>
 
