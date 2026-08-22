@@ -21,7 +21,7 @@ const residencyOptions = ['Day Scholar', 'Boys Hostel', 'Girls Hostel']
 
 export const conditionalFields = {
   pu: [
-    { name: 'stream', label: 'Stream Interested In', type: 'select', required: true, options: ['Science (PCMB)', 'Science (PCMC)', 'Science (PCME)', 'Commerce'] },
+    { name: 'stream', label: 'Stream Interested In', type: 'select', required: true, options: ['Science (PCMB)', 'Science (PCMC)', 'Science (PCME)', 'Commerce (SEBA)', 'Commerce (CEBA)'] },
     { name: 'board', label: 'Current / Last Board', type: 'select', required: true, options: ['Karnataka SSLC', 'CBSE', 'ICSE'] },
     { name: 'tenthMarks', label: '10th Marks (%)', type: 'number', required: true },
     { name: 'residency', label: 'Day Scholar or Hostel?', type: 'select', required: true, options: residencyOptions },
@@ -32,7 +32,7 @@ export const conditionalFields = {
     { name: 'residency', label: 'Day Scholar or Hostel?', type: 'select', required: true, options: residencyOptions },
   ],
   degree: [
-    { name: 'degreeProgram', label: 'Which Degree Program Are You Interested In?', type: 'text', required: true },
+    { name: 'degreeProgram', label: 'Which Degree Program Are You Interested In?', type: 'select', required: true, options: ['B.Com', 'BBA', 'BCA'] },
     { name: 'puc12Marks', label: 'PUC / 12th Marks (%)', type: 'number', required: true },
   ],
 }

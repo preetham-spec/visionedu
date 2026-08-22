@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function CampusSection({ campus, bg }) {
   return (
     <section id={campus.id} className={`py-14 md:py-20 ${bg} scroll-mt-32`}>
@@ -43,6 +45,15 @@ export default function CampusSection({ campus, bg }) {
             </div>
           ))}
         </div>
+
+        {campus.learnMoreLink && (
+          <Link
+            to={campus.learnMoreLink}
+            className="inline-flex items-center gap-2 text-sm font-semibold text-brand-700 hover:text-brand-800 mt-5"
+          >
+            {campus.learnMoreLabel || 'Learn More'} <i className="fas fa-arrow-right text-xs"></i>
+          </Link>
+        )}
       </div>
     </section>
   )

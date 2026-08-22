@@ -16,6 +16,7 @@ import Terms from './pages/Terms'
 import AntiRagging from './pages/AntiRagging'
 import Careers from './pages/Careers'
 import Results from './pages/Results'
+import DegreeCollege from './pages/DegreeCollege'
 
 export default function App() {
   return (
@@ -37,6 +38,7 @@ export default function App() {
         <Route path="/anti-ragging-policy" element={<AntiRagging />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/results" element={<Results />} />
+        <Route path="/degree-college" element={<DegreeCollege />} />
       </Routes>
       <Footer />
     </div>

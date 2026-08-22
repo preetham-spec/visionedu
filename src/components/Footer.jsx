@@ -51,9 +51,15 @@ export default function Footer() {
             </Link>
             <Link
               to="/careers"
-              className="inline-flex items-center gap-2 text-xs font-semibold border border-gray-700 rounded-lg px-3 py-2 hover:border-brand-500 hover:text-brand-400 transition-colors"
+              className="inline-flex items-center gap-2 text-xs font-semibold border border-gray-700 rounded-lg px-3 py-2 hover:border-brand-500 hover:text-brand-400 transition-colors mb-2"
             >
               Careers <i className="fas fa-arrow-right text-[10px]"></i>
+            </Link>
+            <Link
+              to="/degree-college"
+              className="inline-flex items-center gap-2 text-xs font-semibold border border-gray-700 rounded-lg px-3 py-2 hover:border-brand-500 hover:text-brand-400 transition-colors"
+            >
+              Degree College <i className="fas fa-arrow-right text-[10px]"></i>
             </Link>
           </div>
 

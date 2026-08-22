@@ -64,7 +64,7 @@ export const campuses = [
     badges: ['Day Scholars', 'Commerce'],
     exclusive: false,
     description:
-      'A dedicated day-scholar campus close to our Banaswadi Day Scholar Campus in Kalyan Nagar, focused on Commerce stream PUC — Accountancy, Business Studies, Economics and related subjects — with the same academic rigor and support as our other campuses.',
+      'A dedicated day-scholar campus close to our Banaswadi Day Scholar Campus in Kalyan Nagar, focused on Commerce stream PUC — offering the SEBA (Statistics, Economics, Business Studies, Accountancy) and CEBA (Computer Science, Economics, Business Studies, Accountancy) combinations — with the same academic rigor and support as our other campuses.',
     addressPending: true,
     areaLabel: 'Kalyan Nagar, Bengaluru',
     amenities: [
@@ -81,11 +81,13 @@ export const campuses = [
     badges: ['Degree College', 'Co-Ed'],
     exclusive: false,
     description:
-      'Vision Degree College offers undergraduate degree programs open to all students, with the same focus on mentorship, strong faculty and results that Vision is known for.',
+      'Vision Degree College offers B.Com, BBA and BCA undergraduate degree programs open to all students, with the same focus on mentorship, strong faculty and results that Vision is known for.',
     addressPending: true,
     areaLabel: 'Kalyan Nagar, Bengaluru',
+    learnMoreLink: '/degree-college',
+    learnMoreLabel: 'View Degree College Page',
     amenities: [
-      ['fa-graduation-cap', 'Undergraduate Programs'],
+      ['fa-graduation-cap', 'B.Com, BBA & BCA'],
       ['fa-book-open', 'Library'],
       ['fa-desktop', 'Computer Lab'],
       ['fa-briefcase', 'Placement Support'],
