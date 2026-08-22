@@ -43,24 +43,11 @@ export default function Footer() {
 
           <div>
             <h4 className="text-white font-bold text-sm mb-3">Blog</h4>
-            <Link
-              to="/blog"
-              className="inline-flex items-center gap-2 text-xs font-semibold border border-gray-700 rounded-lg px-3 py-2 hover:border-brand-500 hover:text-brand-400 transition-colors mb-2"
-            >
-              Read Our Blog <i className="fas fa-arrow-right text-[10px]"></i>
-            </Link>
-            <Link
-              to="/careers"
-              className="inline-flex items-center gap-2 text-xs font-semibold border border-gray-700 rounded-lg px-3 py-2 hover:border-brand-500 hover:text-brand-400 transition-colors mb-2"
-            >
-              Careers <i className="fas fa-arrow-right text-[10px]"></i>
-            </Link>
-            <Link
-              to="/degree-college"
-              className="inline-flex items-center gap-2 text-xs font-semibold border border-gray-700 rounded-lg px-3 py-2 hover:border-brand-500 hover:text-brand-400 transition-colors"
-            >
-              Degree College <i className="fas fa-arrow-right text-[10px]"></i>
-            </Link>
+            <ul className="space-y-1.5 text-xs">
+              <li><Link to="/blog" className="hover:text-brand-400">Read Our Blog</Link></li>
+              <li><Link to="/careers" className="hover:text-brand-400">Careers</Link></li>
+              <li><Link to="/degree-college" className="hover:text-brand-400">Degree College</Link></li>
+            </ul>
           </div>
 
           <div className="md:col-span-2">
