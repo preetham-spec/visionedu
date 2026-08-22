@@ -4,7 +4,6 @@
 // whatever is here without needing any other changes.
 
 export const examLabel = 'II PUC - 2026 Science Toppers'
-export const passOutYear = '2026'
 export const yearsOfExcellence = 20
 export const admissionsYear = '2026-27'
 

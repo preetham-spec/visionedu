@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import Seo from '../components/Seo'
 import {
   examLabel,
-  passOutYear,
   yearsOfExcellence,
   admissionsYear,
   stateRankers,
@@ -23,6 +22,8 @@ function ordinalSuffix(n) {
     default: return 'th'
   }
 }
+
+const sortedStateRankers = [...stateRankers].sort((a, b) => a.rank - b.rank)
 
 export default function Results() {
   return (
@@ -68,11 +69,11 @@ export default function Results() {
       {/* State Rankers */}
       <section className="py-14 md:py-16 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-brand-700 font-bold tracking-wide uppercase text-xs mb-1">PUC Toppers · Batch of {passOutYear}</h2>
+          <h2 className="text-brand-700 font-bold tracking-wide uppercase text-xs mb-1">{examLabel}</h2>
           <h3 className="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-8">State Rank Holders</h3>
 
           <div className="grid sm:grid-cols-3 gap-5">
-            {stateRankers.map((s) => (
+            {sortedStateRankers.map((s) => (
               <div
                 key={s.regNo}
                 className="relative bg-gradient-to-br from-brand-900 to-brand-950 text-white rounded-2xl p-6 text-center shadow-lg"
@@ -87,8 +88,7 @@ export default function Results() {
                   <sup>{ordinalSuffix(s.rank)}</sup> Rank
                 </span>
                 <h4 className="font-bold text-lg mb-1">{s.name}</h4>
-                <p className="text-xs text-brand-200">{s.regNo}</p>
-                <p className="text-[11px] text-accent-400 font-semibold mb-4">Batch of {passOutYear}</p>
+                <p className="text-xs text-brand-200 mb-4">{s.regNo}</p>
                 <div className="inline-block bg-white/10 rounded-lg px-4 py-2">
                   <span className="text-2xl font-extrabold text-accent-400">{s.marks}</span>
                   <span className="text-xs text-brand-200"> / 600</span>
@@ -116,7 +116,6 @@ export default function Results() {
                 <div className="text-xl font-extrabold text-brand-700">{s.marks}</div>
                 <div className="text-xs font-bold text-gray-900 mt-1 leading-snug">{s.name}</div>
                 <div className="text-[10px] text-gray-400 mt-0.5">{s.regNo}</div>
-                <div className="text-[10px] text-brand-600 font-semibold mt-0.5">Batch of {passOutYear}</div>
               </div>
             ))}
           </div>
