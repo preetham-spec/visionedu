@@ -53,51 +53,38 @@ export default function DegreeCollege() {
           ></div>
           <div className="absolute inset-0 bg-gradient-to-br from-brand-950/90 via-brand-900/80 to-brand-950/95"></div>
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-12 gap-8 items-center">
-            <div className="lg:col-span-7">
-              <div className="flex items-center gap-2 text-xs sm:text-sm text-brand-200 mb-4 fade-in-up">
-                <Link to="/" className="hover:text-white transition-colors">Home</Link>
-                <i className="fas fa-chevron-right text-[10px]"></i>
-                <span className="text-white font-medium">Vision Degree College</span>
-              </div>
-              <h2 className="text-accent-400 font-bold tracking-wide uppercase text-xs mb-2 fade-in-up delay-100">
-                Vision Degree College
-              </h2>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight mb-4 fade-in-up delay-100">
-                Build Your Career with a{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-400 to-yellow-200">
-                  Vision Degree
-                </span>
-              </h1>
-              <p className="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed mb-6 fade-in-up delay-200">
-                Undergraduate degree programs in Bangalore — B.Com, BBA and BCA — with the same focus on mentorship,
-                strong faculty and results that Vision is known for.
-              </p>
-              <div className="flex flex-wrap gap-3 fade-in-up delay-300">
-                <Link
-                  to="/apply"
-                  className="bg-accent-500 hover:bg-accent-400 text-brand-950 px-6 py-3 rounded-xl font-bold text-sm transition-all shadow-md"
-                >
-                  Apply Now
-                </Link>
-                <a
-                  href="tel:+917349744110"
-                  className="glass hover:bg-white/10 text-white px-6 py-3 rounded-xl font-medium text-sm transition-all flex items-center gap-2"
-                >
-                  <i className="fas fa-phone text-xs"></i> 73497 44110
-                </a>
-              </div>
-            </div>
-
-            <div className="lg:col-span-5 relative fade-in-up delay-200 mt-4 lg:mt-0">
-              <div className="absolute -inset-1 bg-gradient-to-r from-brand-500 to-accent-500 rounded-2xl blur-lg opacity-40"></div>
-              <img
-                src="/images/main-campus.jpg"
-                alt="Vision Degree College"
-                className="relative rounded-2xl shadow-2xl w-full h-64 sm:h-80 lg:h-full object-cover border border-white/10"
-              />
-            </div>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+          <div className="flex items-center justify-center gap-2 text-xs sm:text-sm text-brand-200 mb-4 fade-in-up">
+            <Link to="/" className="hover:text-white transition-colors">Home</Link>
+            <i className="fas fa-chevron-right text-[10px]"></i>
+            <span className="text-white font-medium">Vision Degree College</span>
+          </div>
+          <h2 className="text-accent-400 font-bold tracking-wide uppercase text-xs mb-2 fade-in-up delay-100">
+            Vision Degree College
+          </h2>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight mb-4 fade-in-up delay-100">
+            Build Your Career with a{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-400 to-yellow-200">
+              Vision Degree
+            </span>
+          </h1>
+          <p className="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed mb-6 fade-in-up delay-200 max-w-2xl mx-auto">
+            Undergraduate degree programs in Bangalore — B.Com, BBA and BCA — with the same focus on mentorship,
+            strong faculty and results that Vision is known for.
+          </p>
+          <div className="flex flex-wrap justify-center gap-3 fade-in-up delay-300">
+            <Link
+              to="/apply"
+              className="bg-accent-500 hover:bg-accent-400 text-brand-950 px-6 py-3 rounded-xl font-bold text-sm transition-all shadow-md"
+            >
+              Apply Now
+            </Link>
+            <a
+              href="tel:+917349744110"
+              className="glass hover:bg-white/10 text-white px-6 py-3 rounded-xl font-medium text-sm transition-all flex items-center gap-2"
+            >
+              <i className="fas fa-phone text-xs"></i> 73497 44110
+            </a>
           </div>
         </div>
       </section>
