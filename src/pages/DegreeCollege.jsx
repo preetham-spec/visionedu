@@ -102,6 +102,24 @@ export default function DegreeCollege() {
         </div>
       </section>
 
+      {/* Affiliation Highlight */}
+      <section className="py-8 md:py-10 bg-gradient-to-r from-accent-500 to-accent-400">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-5 text-center sm:text-left">
+          <div>
+            <p className="text-brand-950/70 text-xs font-bold uppercase tracking-wider mb-1">Affiliated To</p>
+            <p className="text-brand-950 text-xl sm:text-2xl font-extrabold">Bangalore North University</p>
+          </div>
+          <a
+            href="https://www.visiondegree.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-brand-950 hover:bg-brand-900 text-white px-6 py-3 rounded-xl font-bold text-sm transition-all shadow-md whitespace-nowrap"
+          >
+            Know More <i className="fas fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+      </section>
+
       {/* Courses Offered */}
       <section className="py-14 md:py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -54,6 +54,21 @@ export const jeeScorers = [
   { name: 'Mithun B R', appNo: '260310545866', percentile: '90.01', photo: '/images/jee-students/j39.jpg' },
 ]
 
+export const jeeExamLabel2025 = 'JEE Mains - 2025 Results'
+
+export const jeeScorers2025 = [
+  { name: 'Varun J Kumar', appNo: '250310313996', percentile: '99.71', photo: '/images/jee2025-students/j1.jpg' },
+  { name: 'Monish Gowda K L', appNo: '250310697751', percentile: '98.09', photo: '/images/jee2025-students/j2.jpg' },
+  { name: 'Gajendra D', appNo: '250310441284', percentile: '97.67', photo: '/images/jee2025-students/j3.jpg' },
+  { name: 'Basavakanth', appNo: '250310754116', percentile: '97.56', photo: '/images/jee2025-students/j4.jpg' },
+  { name: 'Vinayaka Appasaheb Patil', appNo: '250310636187', percentile: '97.39', photo: '/images/jee2025-students/j5.jpg' },
+  { name: 'B Basavaraj', appNo: '250310949459', percentile: '96.57', photo: '/images/jee2025-students/j6.jpg' },
+  { name: 'Pavan K P', appNo: '250310753885', percentile: '96.44', photo: '/images/jee2025-students/j7.jpg' },
+  { name: 'Peddinti Varsini Roy', appNo: '250320010340', percentile: '96.41', photo: '/images/jee2025-students/j8.jpg' },
+  { name: 'Pavan G', appNo: '250310953320', percentile: '96.33', photo: '/images/jee2025-students/j9.jpg' },
+  { name: 'Vishwas P', appNo: '250310361768', percentile: '96.25', photo: '/images/jee2025-students/j10.jpg' },
+]
+
 export const jeeAdmissionsYear = '2026-27'
 
 export const jeeCampusContacts = [
