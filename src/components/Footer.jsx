@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 export default function Footer() {
   const { pathname } = useLocation()
   const isNeetPage = pathname === '/neet-academy'
+  const isDegreePage = pathname === '/degree-college'
 
   return (
     <footer className="bg-gray-900 text-gray-300 py-8 border-t border-gray-800">
@@ -51,15 +52,23 @@ export default function Footer() {
           </div>
 
           <div className="md:col-span-2">
-            <h4 className="text-white font-bold text-sm mb-3">{isNeetPage ? 'NEET Admissions' : 'Head Office'}</h4>
+            <h4 className="text-white font-bold text-sm mb-3">
+              {isNeetPage ? 'NEET Admissions' : isDegreePage ? 'Degree Admissions' : 'Head Office'}
+            </h4>
             <ul className="space-y-1.5 text-xs">
-              <li className="flex items-start gap-2">
-                <i className="fas fa-map-marker-alt mt-0.5 text-brand-500"></i>
-                <span>802, 9th B Main, HRBR Layout Kalyan Nagar 1 Block, Bengaluru 560043</span>
-              </li>
+              {!isDegreePage && (
+                <li className="flex items-start gap-2">
+                  <i className="fas fa-map-marker-alt mt-0.5 text-brand-500"></i>
+                  <span>802, 9th B Main, HRBR Layout Kalyan Nagar 1 Block, Bengaluru 560043</span>
+                </li>
+              )}
               <li className="flex items-center gap-2">
                 <i className="fas fa-phone text-brand-500"></i>
-                <span>080 471 85111{isNeetPage && ' | 73497 44105'}</span>
+                <span>
+                  080 471 85111
+                  {isNeetPage && ' | 73497 44105'}
+                  {isDegreePage && ' | 73497 44110'}
+                </span>
               </li>
               {isNeetPage && (
                 <>
