@@ -7,6 +7,7 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const { pathname } = useLocation()
   const isNeetPage = pathname === '/neet-academy'
+  const isDegreePage = pathname === '/degree-college'
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10)
@@ -37,7 +38,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 md:h-20">
-          <Link to={isNeetPage ? '/neet-academy' : '/'} className="flex items-center">
+          <Link to={isNeetPage ? '/neet-academy' : isDegreePage ? '/degree-college' : '/'} className="flex items-center">
             {isNeetPage ? (
               <div className="flex flex-col items-start">
                 <Logo
@@ -50,6 +51,13 @@ export default function Navbar() {
                   A UNIT OF VISIONERS ACADEMY LLP
                 </span>
               </div>
+            ) : isDegreePage ? (
+              <Logo
+                src="/images/degree-logo-mark.png"
+                aspect="892/256"
+                label="Vision Degree College"
+                className="h-9 md:h-11"
+              />
             ) : (
               <Logo className="h-9 md:h-11" />
             )}
