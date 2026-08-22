@@ -15,6 +15,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy'
 import Terms from './pages/Terms'
 import AntiRagging from './pages/AntiRagging'
 import Careers from './pages/Careers'
+import Results from './pages/Results'
 
 export default function App() {
   return (
@@ -35,6 +36,7 @@ export default function App() {
         <Route path="/terms-and-conditions" element={<Terms />} />
         <Route path="/anti-ragging-policy" element={<AntiRagging />} />
         <Route path="/careers" element={<Careers />} />
+        <Route path="/results" element={<Results />} />
       </Routes>
       <Footer />
     </div>

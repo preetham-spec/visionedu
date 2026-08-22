@@ -17,10 +17,10 @@ export default function Navbar() {
   const hashLinks = [
     { href: '/#home', label: 'Home' },
     { href: '/#academics', label: 'Academics' },
-    { href: '/#results', label: 'Results' },
   ]
 
   const routeLinks = [
+    { to: '/results', label: 'Results' },
     { to: '/campuses', label: 'Campuses' },
     { to: '/facilities', label: 'Facilities' },
     { to: '/faq', label: 'FAQ' },

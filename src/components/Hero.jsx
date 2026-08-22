@@ -48,12 +48,12 @@ export default function Hero() {
               >
                 Apply for Admission
               </Link>
-              <a
-                href="#results"
+              <Link
+                to="/results"
                 className="glass hover:bg-white/10 text-white text-center px-6 sm:px-8 py-3 rounded-xl font-medium text-base transition-all flex items-center justify-center gap-2 w-full sm:w-auto"
               >
                 View Our Results <i className="fas fa-arrow-right text-sm"></i>
-              </a>
+              </Link>
             </div>
           </div>
 
