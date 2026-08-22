@@ -39,15 +39,24 @@ body {
   50% { opacity: 0.8; }
 }
 
-.fade-in-up {
-  animation: fadeInUp 0.8s ease-out forwards;
-  opacity: 0;
+/*
+ * Gated behind prefers-reduced-motion so the fade-in never becomes a
+ * permanent opacity:0 on setups where the animation itself doesn't run
+ * (reduced-motion OS/browser settings, some old GPU drivers/remote
+ * desktops). Content is fully visible by default; the fade is a bonus
+ * only when animations are known to be safe to play.
+ */
+@media (prefers-reduced-motion: no-preference) {
+  .fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+  }
+  .fade-in-up.animate-float {
+    animation: fadeInUp 0.8s ease-out forwards, float 6s ease-in-out infinite;
+  }
 }
 .animate-float {
   animation: float 6s ease-in-out infinite;
-}
-.fade-in-up.animate-float {
-  animation: fadeInUp 0.8s ease-out forwards, float 6s ease-in-out infinite;
 }
 .animate-pulse-slow {
   animation: pulseSlow 8s ease-in-out infinite;

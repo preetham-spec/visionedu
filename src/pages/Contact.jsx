@@ -94,6 +94,16 @@ export default function Contact() {
                   <a href="tel:+918047185111" className="font-bold text-lg hover:text-accent-400">080 471 85111</a>
                 </div>
               </div>
+
+              <div className="bg-brand-900 text-white rounded-xl p-5 flex items-center gap-4">
+                <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center shrink-0">
+                  <i className="fas fa-user-graduate"></i>
+                </div>
+                <div>
+                  <div className="text-[10px] uppercase tracking-wider text-brand-200">Degree Admissions</div>
+                  <a href="tel:+917349744110" className="font-bold text-lg hover:text-accent-400">73497 44110</a>
+                </div>
+              </div>
             </div>
           </div>
 
