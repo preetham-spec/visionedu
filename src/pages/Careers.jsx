@@ -14,17 +14,17 @@ const openings = [
   },
   {
     title: 'Campus Administrator',
-    image: '/images/main-campus.jpg',
+    image: '/images/careers-campus-admin.jpg',
     description: 'Oversees administrative operations, resource management, and coordinates events and facilities.',
   },
   {
     title: 'Chef',
-    image: '/images/mess-1.jpg',
+    image: '/images/careers-chef.jpg',
     description: 'Develops nutritious menus meeting diverse dietary needs while leading kitchen staff and maintaining food safety standards.',
   },
   {
     title: 'Hostel Warden',
-    image: '/images/facility-hostel.jpg',
+    image: '/images/careers-warden.jpg',
     description: 'Manages residential operations, ensures student security and discipline, and creates a supportive living environment.',
   },
 ]
