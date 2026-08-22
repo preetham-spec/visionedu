@@ -128,6 +128,19 @@ export default function Footer() {
             >
               <i className="fab fa-instagram text-sm"></i>
             </a>
+            <a
+              href={
+                isNeetPage
+                  ? 'https://www.threads.com/@visionneetacademy.bengaluru'
+                  : 'https://www.threads.com/@visionpucollege.bengaluru'
+              }
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-7 h-7 rounded-lg flex items-center justify-center text-white bg-black hover:opacity-90 transition-opacity shadow-sm font-bold text-sm"
+              aria-label="Follow Vision on Threads"
+            >
+              @
+            </a>
             <a href="#" className="hover:text-brand-400"><i className="fab fa-youtube text-sm"></i></a>
           </div>
         </div>
