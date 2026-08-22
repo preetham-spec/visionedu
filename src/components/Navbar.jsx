@@ -25,8 +25,8 @@ export default function Navbar() {
     { to: '/facilities', label: 'Facilities' },
     { to: '/faq', label: 'FAQ' },
     { to: '/contact', label: 'Contact' },
-    { to: '/degree-college', label: 'Degree College' },
-    { to: '/neet-academy', label: 'NEET Academy' },
+    { to: '/degree-college', label: 'Degree' },
+    { to: '/neet-academy', label: 'NEET' },
   ]
 
   return (
