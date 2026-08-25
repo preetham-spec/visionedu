@@ -86,10 +86,7 @@ export default function NeetAcademy() {
         ]}
       />
       {/* Hero */}
-      <section
-        className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden bg-brand-950 text-white bg-cover bg-center"
-        style={{ backgroundImage: 'url(/images/hero.jpg)' }}
-      >
+      <section className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden bg-brand-950 text-white">
         <div className="absolute inset-0">
           <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-brand-700/40 rounded-full blur-[120px]"></div>
           <div className="absolute bottom-[-20%] right-[-10%] w-[60%] h-[60%] bg-accent-600/20 rounded-full blur-[150px]"></div>
@@ -97,7 +94,7 @@ export default function NeetAcademy() {
             className="absolute inset-0 opacity-10"
             style={{ backgroundImage: 'radial-gradient(#ffffff 1px, transparent 1px)', backgroundSize: '40px 40px' }}
           ></div>
-          <div className="absolute inset-0 bg-gradient-to-br from-brand-950/95 via-brand-900/90 to-brand-950/95"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-brand-950/90 via-brand-900/80 to-brand-950/95"></div>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl">
@@ -140,26 +137,39 @@ export default function NeetAcademy() {
 
       {/* What is NEET */}
       <section className="py-14 md:py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-brand-700 font-bold tracking-wide uppercase text-xs mb-1">Know The Exam</h2>
-          <h3 className="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">What is NEET?</h3>
-          <p className="text-sm sm:text-base text-gray-600 leading-relaxed mb-8">
-            NEET (National Eligibility cum Entrance Test) is India's single common entrance exam for undergraduate
-            medical admissions. It replaced multiple separate state and college-level exams, so every seat in every
-            medical college in the country is now filled through one NEET rank list — which is exactly why the
-            competition is so intense and disciplined preparation matters.
-          </p>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-12 gap-10 items-start">
+            <div className="lg:col-span-7">
+              <h2 className="text-brand-700 font-bold tracking-wide uppercase text-xs mb-1">Know The Exam</h2>
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">What is NEET?</h3>
+              <p className="text-sm sm:text-base text-gray-600 leading-relaxed mb-8">
+                NEET (National Eligibility cum Entrance Test) is India's single common entrance exam for undergraduate
+                medical admissions. It replaced multiple separate state and college-level exams, so every seat in every
+                medical college in the country is now filled through one NEET rank list — which is exactly why the
+                competition is so intense and disciplined preparation matters.
+              </p>
 
-          <div className="grid sm:grid-cols-2 gap-5">
-            {examFacts.map((f) => (
-              <div key={f.title} className="bg-gray-50 rounded-xl p-5 border border-gray-100">
-                <div className="w-10 h-10 bg-brand-50 rounded-lg flex items-center justify-center text-brand-700 mb-3">
-                  <i className={`fas ${f.icon}`}></i>
-                </div>
-                <h4 className="font-bold text-gray-900 text-sm sm:text-base mb-1">{f.title}</h4>
-                <p className="text-xs sm:text-sm text-gray-600">{f.text}</p>
+              <div className="grid sm:grid-cols-2 gap-5">
+                {examFacts.map((f) => (
+                  <div key={f.title} className="bg-gray-50 rounded-xl p-5 border border-gray-100">
+                    <div className="w-10 h-10 bg-brand-50 rounded-lg flex items-center justify-center text-brand-700 mb-3">
+                      <i className={`fas ${f.icon}`}></i>
+                    </div>
+                    <h4 className="font-bold text-gray-900 text-sm sm:text-base mb-1">{f.title}</h4>
+                    <p className="text-xs sm:text-sm text-gray-600">{f.text}</p>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
+
+            <div className="lg:col-span-5 relative mt-2 lg:mt-0">
+              <div className="absolute -inset-1 bg-gradient-to-r from-brand-500 to-accent-500 rounded-2xl blur-lg opacity-30"></div>
+              <img
+                src="/images/hero.jpg"
+                alt="Vision NEET Academy students"
+                className="relative rounded-2xl shadow-2xl w-full h-64 sm:h-80 lg:h-full object-cover border border-gray-100"
+              />
+            </div>
           </div>
         </div>
       </section>
