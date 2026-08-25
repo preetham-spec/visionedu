@@ -50,9 +50,10 @@ export default function Hero() {
               </Link>
               <Link
                 to="/results"
-                className="glass hover:bg-white/10 text-white text-center px-6 sm:px-8 py-3 rounded-xl font-medium text-base transition-all flex items-center justify-center gap-2 w-full sm:w-auto"
+                className="group btn-shine btn-glow-pulse glass hover:bg-white/10 text-white text-center px-6 sm:px-8 py-3 rounded-xl font-medium text-base transition-all flex items-center justify-center gap-2 w-full sm:w-auto ring-1 ring-white/10 hover:ring-accent-400/50"
               >
-                View Our Results <i className="fas fa-arrow-right text-sm"></i>
+                View Our Results{' '}
+                <i className="fas fa-arrow-right text-sm transition-transform duration-300 group-hover:translate-x-1"></i>
               </Link>
             </div>
           </div>
