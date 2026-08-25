@@ -86,7 +86,10 @@ export default function NeetAcademy() {
         ]}
       />
       {/* Hero */}
-      <section className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden bg-brand-950 text-white">
+      <section
+        className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden bg-brand-950 text-white bg-cover bg-center"
+        style={{ backgroundImage: 'url(/images/hero.jpg)' }}
+      >
         <div className="absolute inset-0">
           <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-brand-700/40 rounded-full blur-[120px]"></div>
           <div className="absolute bottom-[-20%] right-[-10%] w-[60%] h-[60%] bg-accent-600/20 rounded-full blur-[150px]"></div>
@@ -94,53 +97,42 @@ export default function NeetAcademy() {
             className="absolute inset-0 opacity-10"
             style={{ backgroundImage: 'radial-gradient(#ffffff 1px, transparent 1px)', backgroundSize: '40px 40px' }}
           ></div>
-          <div className="absolute inset-0 bg-gradient-to-br from-brand-950/90 via-brand-900/80 to-brand-950/95"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-brand-950/95 via-brand-900/90 to-brand-950/95"></div>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-12 gap-8 items-center">
-            <div className="lg:col-span-7">
-              <div className="flex items-center gap-2 text-xs sm:text-sm text-brand-200 mb-4 fade-in-up">
-                <Link to="/" className="hover:text-white transition-colors">Home</Link>
-                <i className="fas fa-chevron-right text-[10px]"></i>
-                <span className="text-white font-medium">Vision NEET Academy</span>
-              </div>
-              <h2 className="text-accent-400 font-bold tracking-wide uppercase text-xs mb-2 fade-in-up delay-100">
-                Vision NEET Academy
-              </h2>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight mb-4 fade-in-up delay-100">
-                One of the Most Trusted &amp;{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-400 to-yellow-200">
-                  Premier NEET Academies
-                </span>{' '}
-                in Karnataka
-              </h1>
-              <p className="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed mb-6 fade-in-up delay-200">
-                A dedicated academy for NEET aspirants — whether it's your first attempt or you're repeating to push
-                your score higher. Many of our students have improved their NEET score by 300+ marks.
-              </p>
-              <div className="flex flex-wrap gap-3 fade-in-up delay-300">
-                <Link
-                  to="/apply"
-                  className="bg-accent-500 hover:bg-accent-400 text-brand-950 px-6 py-3 rounded-xl font-bold text-sm transition-all shadow-md"
-                >
-                  Apply Now
-                </Link>
-                <a
-                  href="tel:+918047185111"
-                  className="glass hover:bg-white/10 text-white px-6 py-3 rounded-xl font-medium text-sm transition-all flex items-center gap-2"
-                >
-                  <i className="fas fa-phone text-xs"></i> 080 471 85111
-                </a>
-              </div>
+          <div className="max-w-3xl">
+            <div className="flex items-center gap-2 text-xs sm:text-sm text-brand-200 mb-4 fade-in-up">
+              <Link to="/" className="hover:text-white transition-colors">Home</Link>
+              <i className="fas fa-chevron-right text-[10px]"></i>
+              <span className="text-white font-medium">Vision NEET Academy</span>
             </div>
-
-            <div className="lg:col-span-5 relative fade-in-up delay-200 mt-4 lg:mt-0">
-              <div className="absolute -inset-1 bg-gradient-to-r from-brand-500 to-accent-500 rounded-2xl blur-lg opacity-40"></div>
-              <img
-                src="/images/hero.jpg"
-                alt="Vision NEET Academy students"
-                className="relative rounded-2xl shadow-2xl w-full h-64 sm:h-80 lg:h-full object-cover border border-white/10"
-              />
+            <h2 className="text-accent-400 font-bold tracking-wide uppercase text-xs mb-2 fade-in-up delay-100">
+              Vision NEET Academy
+            </h2>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight mb-4 fade-in-up delay-100">
+              One of the Most Trusted &amp;{' '}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-400 to-yellow-200">
+                Premier NEET Academies
+              </span>{' '}
+              in Karnataka
+            </h1>
+            <p className="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed mb-6 fade-in-up delay-200">
+              A dedicated academy for NEET aspirants — whether it's your first attempt or you're repeating to push
+              your score higher. Many of our students have improved their NEET score by 300+ marks.
+            </p>
+            <div className="flex flex-wrap gap-3 fade-in-up delay-300">
+              <Link
+                to="/apply"
+                className="bg-accent-500 hover:bg-accent-400 text-brand-950 px-6 py-3 rounded-xl font-bold text-sm transition-all shadow-md"
+              >
+                Apply Now
+              </Link>
+              <a
+                href="tel:+918047185111"
+                className="glass hover:bg-white/10 text-white px-6 py-3 rounded-xl font-medium text-sm transition-all flex items-center gap-2"
+              >
+                <i className="fas fa-phone text-xs"></i> 080 471 85111
+              </a>
             </div>
           </div>
         </div>
